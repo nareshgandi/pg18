@@ -1,0 +1,3 @@
+Allow skip scans of btree indexes
+
+These performance gains extend to query optimizations and new indexing features. PostgreSQL 18 adds support for using "skip scan" lookups on multicolumn B-tree indexes, which can result in faster execution times for queries that omit a "=" condition on one or more prefix index columns.
